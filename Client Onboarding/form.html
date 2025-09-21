@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Onboarding Questionnaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="form.css">
+ <script defer src="form.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">EASELLI</div>
+            <h1>Client Onboarding Questionnaire</h1>
+            <p>Complete the following information to help us create effective influencer marketing campaigns for your brand</p>
+        </header>
+        
+        <div class="progress-container">
+            <div class="progress-info">
+                <div class="progress-text">Onboarding Progress</div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <div class="progress-percentage">0%</div>
+        </div>
+        
+        <form class="onboarding-form" id="onboardingForm">
+            <!-- Section 1: Basic Information -->
+            <div class="form-section">
+                <h2><span>1</span> Basic Information</h2>
+                
+                <div class="form-group">
+                    <label for="companyName" class="required">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="keyContact" class="required">Key Person of Contact</label>
+                    <input type="text" id="keyContact" name="keyContact" required>
+                </div>
+                
+                <div class="form-group billing-help">
+                    <label for="financeContact" class="required">Finance Contact</label>
+                    <input type="text" id="financeContact" name="financeContact" required>
+                    <div class="help-text" style="position: relative;">
+                        <i class="fas fa-info-circle" id="billingInfoIcon" tabindex="0" style="cursor:pointer;"></i>
+                        <span id="billingTooltip" class="billing-tooltip" style="display:none; position:absolute; left:28px; top:0; background:#fff; color:#111; border:1px solid #dc3545; border-radius:6px; padding:7px 12px; font-size:0.95rem; z-index:10; box-shadow:0 2px 8px rgba(0,0,0,0.08); white-space:nowrap;">Person responsible for billing and payments</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="website" class="required">Company Website</label>
+                    <input type="url" id="website" name="website" required placeholder="https://">
+                </div>
+            </div>
+            
+            <!-- Section 2: Social Media -->
+            <div class="form-section">
+                <h2><span>2</span> Social Media Presence</h2>
+                
+                <div class="social-grid">
+                    <div class="social-input">
+                        <i class="fab fa-instagram"></i>
+                        <input type="text" id="instagram" name="instagram" placeholder="@username">
+                    </div>
+                    
+                    <div class="social-input">
+                        <i class="fab fa-facebook"></i>
+                        <input type="text" id="facebook" name="facebook" placeholder="Profile URL">
+                    </div>
+                    
+                    <div class="social-input">
+                        <i class="fab fa-twitter"></i>
+                        <input type="text" id="twitter" name="twitter" placeholder="@username">
+                    </div>
+                    
+                    <div class="social-input">
+                        <i class="fab fa-youtube"></i>
+                        <input type="text" id="youtube" name="youtube" placeholder="Channel URL">
+                    </div>
+                    
+                    <div class="social-input">
+                        <i class="fab fa-tiktok"></i>
+                        <input type="text" id="tiktok" name="tiktok" placeholder="@username">
+                    </div>
+                    
+                    <div class="social-input">
+                        <i class="fab fa-linkedin"></i>
+                        <input type="text" id="linkedin" name="linkedin" placeholder="Profile URL">
+                    </div>
+                    
+                    <div class="social-input">
+                        <i class="fab fa-twitch"></i>
+                        <input type="text" id="twitch" name="twitch" placeholder="Channel URL">
+                    </div>
+                    
+                    <div class="social-input">
+                        <i class="fas fa-hashtag"></i>
+                        <input type="text" id="otherHandles" name="otherHandles" placeholder="Other handles">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section 3: Brand Identity -->
+            <div class="form-section">
+                <h2><span>3</span> Brand Identity</h2>
+                
+                <div class="form-group">
+                    <label for="brandDescription" class="required">How would you describe your brand in three words?</label>
+                    <input type="text" id="brandDescription" name="brandDescription" required placeholder="e.g., Innovative, Sustainable, Friendly">
+                </div>
+                
+                <div class="form-group">
+                    <label for="primaryMessage" class="required">What is the primary message you want to convey through your influencer campaigns?</label>
+                    <textarea id="primaryMessage" name="primaryMessage" required></textarea>
+                </div>
+            </div>
+            
+            <!-- Section 4: Target Audience -->
+            <div class="form-section">
+                <h2><span>4</span> Target Audience</h2>
+                
+                <div class="form-group">
+                    <label for="targetAudience" class="required">Who is your target audience? (Demographics, Psychographics, Behaviors)</label>
+                    <textarea id="targetAudience" name="targetAudience" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerPersonas">Do you have existing customer personas? If yes, please share.</label>
+                    <textarea id="customerPersonas" name="customerPersonas"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="audiencePlatforms" class="required">What social platforms does your target audience primarily use?</label>
+                    <textarea id="audiencePlatforms" name="audiencePlatforms" required></textarea>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn"><link rel="stylesheet" href="submit.html"> SUBMIT </button>
+        </form>
+        
+        <footer>
+            <p>© 2025 EASELLI- Digital Marketing Agency. All rights reserved.</p>
+        </footer>
+    </div>
+
+        
+</body>
+</html>
